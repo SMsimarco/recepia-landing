@@ -7,7 +7,7 @@ export async function GET() {
   const dias = ["domingo","lunes","martes","miércoles","jueves","viernes","sábado"];
   const meses = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
 
-  const texto = `Hoy es ${dias[local.getDay()]} ${local.getDate()} de ${meses[local.getMonth()]} de ${local.getFullYear()}, ${String(local.getHours()).padStart(2,"0")}:${String(local.getMinutes()).padStart(2,"0")} hs`;
+  const texto = `Hoy es ${dias[local.getDay()]} ${local.getDate()} de ${meses[local.getMonth()]}, ${String(local.getHours()).padStart(2,"0")}:${String(local.getMinutes()).padStart(2,"0")} hs`;
 
   return NextResponse.json({ result: texto });
 }
