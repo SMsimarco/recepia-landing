@@ -13,14 +13,13 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }) {
   return (
     <html lang="es">
+      <head>
+        <meta name="facebook-domain-verification" content="nsdmqnpg90gihztyqcmgrexvjslfxx" />
+      </head>
       <body>{children}</body>
     </html>
-  );
+  )
 }
