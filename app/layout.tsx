@@ -9,6 +9,11 @@ export const metadata: Metadata = {
   title: "RecepIA — Recepción inteligente para clínicas",
   description: "Agente de IA para WhatsApp y llamadas que atiende pacientes, responde consultas y gestiona turnos 24/7.",
   keywords: ["recepcionista IA", "WhatsApp para clínicas", "agenda médica", "IA de voz", "automatización de turnos"],
+  icons: {
+    icon: [{ url: "/logo-recepia-transparent.png", type: "image/png" }],
+    shortcut: "/logo-recepia-transparent.png",
+    apple: "/logo-recepia-transparent.png",
+  },
   openGraph: { title: "RecepIA — Cada consulta atendida. Cada turno, conectado.", description: "Recepción inteligente por WhatsApp y voz para clínicas y negocios de servicios.", url: "https://recepia.lat", siteName: "RecepIA", locale: "es_AR", type: "website" },
   twitter: { card: "summary_large_image", title: "RecepIA — Recepción inteligente para clínicas" },
 };
