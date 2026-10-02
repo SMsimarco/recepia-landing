@@ -1,6 +1,7 @@
 import { BrandLogo } from "./components/brand-logo";
 import { BentoGrid } from "./components/bento-grid";
 import { HeroVisual } from "./components/hero-visual";
+import { HeroDepth } from "./components/hero-depth";
 import { Icon } from "./components/icons";
 import { Navigation } from "./components/navigation";
 
@@ -12,6 +13,7 @@ export default function Home() {
     <main>
       <Navigation bookingUrl={CAL_LINK} />
       <section className="hero hero-standalone shell" id="inicio">
+        <HeroDepth />
         <div className="hero-copy">
           <div className="eyebrow reveal reveal-one"><span className="status-dot" /> Agente clínico operativo 24/7</div>
           <h1 className="hero-title reveal reveal-two">Cada consulta atendida. <span>Cada turno, conectado.</span></h1>
@@ -32,7 +34,7 @@ export default function Home() {
       </section>
 
       <section className="section shell experience-section" id="como-funciona">
-        <div className="section-heading centered">
+        <div className="section-heading centered view-reveal">
           <span className="kicker">Probalo en vivo</span>
           <h2>Así atiende RecepIA, <span>paso a paso.</span></h2>
           <p>Elegí un canal y completá una atención realista, desde el primer contacto hasta el turno confirmado.</p>
@@ -41,17 +43,17 @@ export default function Home() {
       </section>
 
       <section className="section shell" id="plataforma">
-        <div className="section-heading centered"><span className="kicker">Después de atender, todo conectado</span><h2>De la conversación a una clínica <span>que funciona mejor.</span></h2><p>RecepIA no solo responde: organiza cada paso posterior sin sumar trabajo a tu equipo.</p></div>
+        <div className="section-heading centered view-reveal"><span className="kicker">Después de atender, todo conectado</span><h2>De la conversación a una clínica <span>que funciona mejor.</span></h2><p>RecepIA no solo responde: organiza cada paso posterior sin sumar trabajo a tu equipo.</p></div>
         <BentoGrid />
       </section>
 
       <section className="section shell architecture" id="seguridad">
-        <div className="architecture-copy">
+        <div className="architecture-copy view-reveal">
           <span className="kicker">Infraestructura confiable</span><h2>Inteligencia que se integra. <span>Control que permanece.</span></h2>
           <p>RecepIA se adapta a tus procesos y mantiene a tu equipo al mando, con trazabilidad completa y escalamiento humano cuando hace falta.</p>
           <ul className="check-list"><li><Icon name="check" /> Cifrado en tránsito y en reposo</li><li><Icon name="check" /> Historial y trazabilidad de cada interacción</li><li><Icon name="check" /> Derivación inmediata a una persona</li></ul>
         </div>
-        <div className="system-card" aria-label="Arquitectura de integraciones RecepIA">
+        <div className="system-card view-reveal" aria-label="Arquitectura de integraciones RecepIA">
           <div className="system-status"><span className="status-dot" /> Sistemas operativos</div>
           <div className="system-map">
             <div className="system-node channel-node"><Icon name="message" /><span>Canales</span><small>Voz + WhatsApp</small></div>
@@ -64,9 +66,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section shell quote-section"><div className="quote-mark">“</div><blockquote>RecepIA no reemplaza a la recepción. Le devuelve tiempo para cuidar mejor a cada paciente.</blockquote><div className="quote-author"><span>DM</span><div><strong>Dirección médica</strong><small>Clínica privada · Caso de implementación</small></div></div></section>
+      <section className="section shell quote-section view-reveal"><div className="quote-mark">“</div><blockquote>RecepIA no reemplaza a la recepción. Le devuelve tiempo para cuidar mejor a cada paciente.</blockquote><div className="quote-author"><span>DM</span><div><strong>Dirección médica</strong><small>Clínica privada · Caso de implementación</small></div></div></section>
 
-      <section className="shell final-cta" id="contacto">
+      <section className="shell final-cta view-reveal" id="contacto">
         <div className="cta-glow" aria-hidden="true" /><span className="kicker">El próximo turno ya está esperando</span><h2>Tu recepción puede empezar a funcionar <span>mejor desde hoy.</span></h2><p>Conocé en 15 minutos cómo RecepIA se adapta a tu clínica.</p><a className="button button-primary" href={CAL_LINK} target="_blank" rel="noreferrer">Agendar una demo <Icon name="arrow" /></a><small>Sin compromiso · Configuración acompañada · Integración a medida</small>
       </section>
 

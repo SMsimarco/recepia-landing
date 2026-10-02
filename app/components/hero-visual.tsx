@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type PointerEvent } from "react";
 import { BrandLogo } from "./brand-logo";
 import { Icon } from "./icons";
 
@@ -17,8 +17,24 @@ export function HeroVisual() {
     setStage(0);
   };
 
+  const move = (event: PointerEvent<HTMLDivElement>) => {
+    if (event.pointerType === "touch") return;
+    const rect = event.currentTarget.getBoundingClientRect();
+    const x = (event.clientX - rect.left) / rect.width;
+    const y = (event.clientY - rect.top) / rect.height;
+    event.currentTarget.style.setProperty("--demo-rx", `${(.5 - y) * 2.4}deg`);
+    event.currentTarget.style.setProperty("--demo-ry", `${(x - .5) * 3.2}deg`);
+    event.currentTarget.style.setProperty("--demo-light-x", `${x * 100}%`);
+    event.currentTarget.style.setProperty("--demo-light-y", `${y * 100}%`);
+  };
+
+  const reset = (event: PointerEvent<HTMLDivElement>) => {
+    event.currentTarget.style.setProperty("--demo-rx", "0deg");
+    event.currentTarget.style.setProperty("--demo-ry", "0deg");
+  };
+
   return (
-    <div className="hero-visual reveal reveal-three">
+    <div className="hero-visual view-reveal" onPointerMove={move} onPointerLeave={reset}>
       <div className="reception-demo">
         <div className="reception-topbar">
           <div className="demo-brand"><BrandLogo compact /><span><strong>RecepIA</strong><small>Recepción inteligente</small></span></div>

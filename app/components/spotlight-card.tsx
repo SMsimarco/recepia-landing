@@ -16,5 +16,5 @@ export function SpotlightCard({ children, className = "" }: { children: ReactNod
     event.currentTarget.style.setProperty("--card-rx", "0deg");
     event.currentTarget.style.setProperty("--card-ry", "0deg");
   };
-  return <article className={`spotlight-card ${className}`} onPointerMove={move} onPointerLeave={reset}>{children}</article>;
+  return <article className={`spotlight-card view-reveal ${className}`} onPointerMove={move} onPointerLeave={reset}>{children}</article>;
 }
