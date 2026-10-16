@@ -14,8 +14,8 @@ export const metadata: Metadata = {
     shortcut: "/logo-recepia-transparent.png",
     apple: "/logo-recepia-transparent.png",
   },
-  openGraph: { title: "RecepIA — Cada consulta atendida. Cada turno, conectado.", description: "Recepción inteligente por WhatsApp y voz para clínicas y negocios de servicios.", url: "https://recepia.lat", siteName: "RecepIA", locale: "es_AR", type: "website", images: [{ url: "/og.png?v=2", width: 1200, height: 630 }] },
-  twitter: { card: "summary_large_image", title: "RecepIA — Recepción inteligente para clínicas", images: ["/og.png?v=2"] },
+  openGraph: { title: "RecepIA — Cada consulta atendida. Cada turno, conectado.", description: "Recepción inteligente por WhatsApp y voz para clínicas y negocios de servicios.", url: "https://recepia.lat", siteName: "RecepIA", locale: "es_AR", type: "website", images: [{ url: "/og-card.png", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image", title: "RecepIA — Recepción inteligente para clínicas", images: ["/og-card.png"] },
 };
 
 export const viewport: Viewport = { width: "device-width", initialScale: 1, themeColor: "#030712" };
