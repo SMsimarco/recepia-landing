@@ -55,7 +55,7 @@ button { font:inherit; }
 .hero-standalone::after { content:""; position:absolute; width:min(88vw,980px); height:380px; left:50%; top:170px; z-index:-1; transform:translateX(-50%); background:radial-gradient(ellipse,rgba(34,211,238,.07),rgba(139,92,246,.035) 43%,transparent 72%); pointer-events:none; }
 .hero-standalone .hero-copy { max-width:1040px; margin:auto; padding-bottom:0; }
 .hero-standalone .eyebrow { margin-inline:auto; }
-.hero-standalone .hero-title { max-width:1040px; margin:26px auto 24px; font-size:clamp(62px,6.4vw,92px); line-height:.94; }
+.hero-standalone .hero-title { max-width:1040px; margin:26px auto 24px; font-size:clamp(48px,4.8vw,68px); line-height:1; }
 .hero-standalone .hero-lead { max-width:720px; margin-inline:auto; font-size:18px; }
 .hero-standalone .hero-actions,.hero-standalone .hero-note { justify-content:center; }
 .hero-standalone .hero-actions { margin-top:28px; }
@@ -156,6 +156,6 @@ button { font:inherit; }
 @media (max-width:680px){
   .hero-depth{display:none}
   .hero-standalone{min-height:auto;padding-top:120px}
-  .hero-standalone .hero-title{margin:27px auto 24px;font-size:48px;line-height:.99}
+  .hero-standalone .hero-title{margin:27px auto 24px;font-size:clamp(32px,9vw,42px);line-height:1.03}
   .hero-standalone .hero-lead{font-size:15px}
 }

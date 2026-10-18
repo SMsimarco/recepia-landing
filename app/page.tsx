@@ -16,8 +16,8 @@ export default function Home() {
         <HeroDepth />
         <div className="hero-copy">
           <div className="eyebrow reveal reveal-one"><span className="status-dot" /> Agente clínico operativo 24/7</div>
-          <h1 className="hero-title reveal reveal-two">Cada consulta atendida. <span>Cada turno, conectado.</span></h1>
-          <p className="hero-lead reveal reveal-three">RecepIA atiende WhatsApp y llamadas, entiende a cada paciente y gestiona tu agenda con la precisión de un equipo que nunca se desconecta.</p>
+          <h1 className="hero-title reveal reveal-two">Tu equipo atiende. <span>RecepIA se ocupa de las consultas y los turnos por WhatsApp.</span></h1>
+          <p className="hero-lead reveal reveal-three">Responde preguntas habituales, consulta disponibilidad y acompaña la reserva. Cuando una situación necesita criterio humano, pasa la conversación con contexto.</p>
           <div className="hero-actions reveal reveal-four">
             <a className="button button-primary" href={CAL_LINK} target="_blank" rel="noreferrer">Agendar una demo <Icon name="arrow" /></a>
             <a className="button button-ghost" href="#como-funciona"><span className="play-icon"><Icon name="play" /></span> Probar cómo funciona</a>
@@ -35,7 +35,7 @@ export default function Home() {
 
       <section className="section shell experience-section" id="como-funciona">
         <div className="section-heading centered view-reveal">
-          <span className="kicker">Probalo en vivo</span>
+          <span className="kicker">Explorá cómo funciona</span>
           <h2>Así atiende RecepIA, <span>paso a paso.</span></h2>
           <p>Elegí un canal y completá una atención realista, desde el primer contacto hasta el turno confirmado.</p>
         </div>
@@ -66,7 +66,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section shell quote-section view-reveal"><div className="quote-mark">“</div><blockquote>RecepIA no reemplaza a la recepción. Le devuelve tiempo para cuidar mejor a cada paciente.</blockquote><div className="quote-author"><span>DM</span><div><strong>Dirección médica</strong><small>Clínica privada · Caso de implementación</small></div></div></section>
+      <section className="section shell quote-section view-reveal"><div className="quote-mark">“</div><blockquote>Diseñé RecepIA para que una consulta no dependa de que alguien pueda interrumpir su trabajo para responder.</blockquote><div className="quote-author"><span>SM</span><div><strong>Simón Marconi</strong><small>Creador de RecepIA</small></div></div></section>
 
       <section className="shell final-cta view-reveal" id="contacto">
         <div className="cta-glow" aria-hidden="true" /><span className="kicker">El próximo turno ya está esperando</span><h2>Tu recepción puede empezar a funcionar <span>mejor desde hoy.</span></h2><p>Conocé en 15 minutos cómo RecepIA se adapta a tu clínica.</p><a className="button button-primary" href={CAL_LINK} target="_blank" rel="noreferrer">Agendar una demo <Icon name="arrow" /></a><small>Sin compromiso · Configuración acompañada · Integración a medida</small>

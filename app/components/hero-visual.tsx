@@ -69,7 +69,7 @@ export function HeroVisual() {
                 <div className="live-transcript-head"><span><i /> TRANSCRIPCIÓN EN VIVO</span><div className="transcript-wave">{Array.from({ length: 18 }).map((_, index) => <i key={index} />)}</div></div>
                 <div className="dialogue patient-dialogue"><span>PX</span><p>Hola, quería sacar un turno con cardiología. Si puede ser por la tarde.</p></div>
                 <div className="dialogue ai-dialogue"><BrandLogo compact /><p>Claro. Busco los próximos horarios disponibles para vos.</p></div>
-                <div className="intent-row"><span>Cardiología</span><span>Por la tarde</span><strong>98% confianza</strong></div>
+                <div className="intent-row"><span>Cardiología</span><span>Por la tarde</span><strong>Consulta identificada</strong></div>
                 <button className="demo-action" onClick={() => setStage(2)}>Ver disponibilidad <Icon name="arrow" /></button>
               </div>
             ) : stage === 2 ? (
