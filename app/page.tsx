@@ -73,7 +73,7 @@ export default function Home() {
       </section>
 
       <footer className="footer shell">
-        <a className="brand" href="#inicio"><BrandLogo compact /><span>Recep<span>IA</span></span></a><p>Agentes inteligentes para negocios que cuidan personas.</p><div><a href="/privacidad/">Privacidad</a><a href={CAL_LINK}>Contacto</a><span>© 2026 RecepIA</span></div>
+        <a className="brand" href="#inicio"><BrandLogo compact /><span>Recep<span>IA</span></span></a><p>Agentes inteligentes para negocios que cuidan personas.</p><div><a href="/privacidad/">Privacidad</a><a href={CAL_LINK}>Contacto</a><a href="https://www.linkedin.com/company/145278954/" target="_blank" rel="noreferrer">Seguinos en LinkedIn</a><span>© 2026 RecepIA</span></div>
       </footer>
     </main>
   );
